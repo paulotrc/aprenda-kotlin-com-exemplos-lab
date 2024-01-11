@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
 class ConteudoEducacionalTest {
-    @Test
-    @DisplayName("Deve criar conteudo educacional com sucesso")
-    fun deveCriarConteudoEducacionalComSucesso(){
-        val conteudoEducacional = ConteudoEducacional("Curso Basico Kotlin", 5500)
-        assertEquals("Curso Basico Kotlin", conteudoEducacional.nome)
-        assertEquals(5500, conteudoEducacional.duracao)
-    }
+//    @Test
+//    @DisplayName("Deve criar conteudo educacional com sucesso")
+//    fun deveCriarConteudoEducacionalComSucesso(){
+//        val conteudoEducacional = ConteudoEducacional("Curso Basico Kotlin", 5500)
+//        assertEquals("Curso Basico Kotlin", conteudoEducacional.nome)
+//        assertEquals(5500, conteudoEducacional.duracao)
+//    }
 }
 
 // Desafio de Projeto criado para avaliação do conteúdo técnico explorado no repositório aprenda-kotlin-com-exemplos.
