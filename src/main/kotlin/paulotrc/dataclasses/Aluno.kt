@@ -5,8 +5,6 @@ import paulotrc.dataclasses.Formacao
 data class Aluno(val nome: String, val matricula: String) {
 
     val formacoesAluno = mutableSetOf<Formacao>()
-//    fun Aluno.formacoesPorNivel(nivel:Nivel): List<Formacao> = this.formacoesAluno.toList().filter { formacao: Formacao -> formacao.nivel.equals(nivel) }
-//    fun Aluno.temFormacoesPeloNivel(nivel:Nivel): Boolean = !this.formacoesAluno.toList().filter { formacao: Formacao -> formacao.nivel.equals(nivel) }.isEmpty()
 
     fun addFormacao(formacao: Formacao){
         this.formacoesAluno.add(formacao)

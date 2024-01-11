@@ -22,7 +22,7 @@ class Formacao(val nome: String, val nivel: Nivel, var conteudos: List<ConteudoE
     companion object {
 
         fun montaFormacaoPeloNivelELinguagem(nivel: Nivel, linguagem:Linguagem): List<ConteudoEducacional> {
-            print("o Nivel definido é : ${nivel} para a linguagem ${linguagem.name} e o conteúdo educacional é : ")
+            print("O Nivel definido é : ${nivel} para a linguagem ${linguagem.name} e o conteúdo educacional é : ")
             println()
             val result = when (nivel) {                                     // 1
                 Nivel.BASICO -> getListOfConteudosEducacionaisBasico(linguagem)
