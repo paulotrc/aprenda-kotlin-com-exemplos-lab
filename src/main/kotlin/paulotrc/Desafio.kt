@@ -10,8 +10,8 @@ fun main() {
     val desafio = Desafio()
     val aluno = Aluno(nome="Alfredo", matricula="10")
     desafio.matricularAlunoParaLinguagemPorNivel(aluno, Nivel.BASICO, Linguagem.KOTLIN)
-    desafio.matricularAlunoParaLinguagemPorNivel(aluno, Nivel.BASICO, Linguagem.JAVA)
-    desafio.matricularAlunoParaLinguagemPorNivel(aluno, Nivel.BASICO, Linguagem.PYTHON)
+    desafio.matricularAlunoParaLinguagemPorNivel(aluno, Nivel.AVANCADO, Linguagem.JAVA)
+    desafio.matricularAlunoParaLinguagemPorNivel(aluno, Nivel.INTERMEDIARIO, Linguagem.PYTHON)
 
     val aluno2 = Aluno(nome="Manoel", matricula="11")
     desafio.matricularAlunoParaLinguagemPorNivel(aluno2, Nivel.INTERMEDIARIO, Linguagem.KOTLIN)

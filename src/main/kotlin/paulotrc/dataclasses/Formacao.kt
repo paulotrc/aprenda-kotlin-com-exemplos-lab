@@ -13,12 +13,12 @@ class Formacao(val nome: String, val nivel: Nivel, var conteudos: List<ConteudoE
         this.inscritos.add(aluno)
     }
 
-    fun getInscritosPorNivelFormacao(nivel:Nivel): Int {
-        fun Aluno.temFormacoesPeloNivel(nivel:Nivel): Boolean = !this.formacoesAluno.toList().filter { formacao: Formacao -> formacao.nivel.equals(nivel) }.isEmpty()
-        val inscritos : Int = 0
-        this.inscritos.toList().forEach { aluno:Aluno -> aluno.temFormacoesPeloNivel(nivel)}?.let { inscritos + 1 }
-        return inscritos;
-    }
+//    fun getInscritosPorNivelFormacao(nivel:Nivel): Int {
+//        fun Aluno.temFormacoesPeloNivel(nivel:Nivel): Boolean = !this.formacoesAluno.toList().filter { formacao: Formacao -> formacao.nivel.equals(nivel) }.isEmpty()
+//        val inscritos : Int = 0
+//        this.inscritos.toList().forEach { aluno:Aluno -> aluno.temFormacoesPeloNivel(nivel)}?.let { inscritos + 1 }
+//        return inscritos;
+//    }
     companion object {
 
         fun montaFormacaoPeloNivelELinguagem(nivel: Nivel, linguagem:Linguagem): List<ConteudoEducacional> {

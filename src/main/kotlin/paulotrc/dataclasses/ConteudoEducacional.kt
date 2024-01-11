@@ -13,10 +13,4 @@ class ConteudoEducacional(val nome: String, val duracao: Int = 120) {
 
         return true
     }
-
-    override fun hashCode(): Int {
-        var result = nome.hashCode()
-        result = 31 * result + duracao
-        return result
-    }
 }
